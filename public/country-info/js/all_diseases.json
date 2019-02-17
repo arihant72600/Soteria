@@ -916,13 +916,7 @@
   ],
   "iceland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
   "hungary": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "hong kong sar": [
-    "Routine",
-    "Hepatitis A",
-    "Typhoid",
-    "Hepatitis B",
-    "Rabies"
-  ],
+  "hong kong": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
   "honduras": [
     "Routine",
     "Hepatitis A",
