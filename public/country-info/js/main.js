@@ -2335,7 +2335,7 @@ var waterScores = [
     "Clean Water Score": 0
   },
   {
-    "Countries and Area": "Congo",
+    "Countries and Area": "Congo DRC",
     "Clean Water Score": 37
   },
   {
