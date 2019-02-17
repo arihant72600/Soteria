@@ -33,7 +33,7 @@
         //*** ADD ***//
       ], function(Map, MapView, FeatureLayer) {
         var map = new Map({
-          basemap: "dark-gray"
+          basemap: "gray"
         });
 
         var view = new MapView({
@@ -47,7 +47,7 @@
         var popupTrailheads = {
           title: "{NAME}",
           content:
-            '<b>Travel Advisory Level:</b> {LEVEL_} <br> {NAME:healthAdvisory} <br> <a href="google.com"><button>More Info</button></a>'
+            '<b>Travel Advisory Level:</b> {LEVEL_} <br> {NAME:healthAdvisory} <br> <a href="https://www.google.com"><button>More Info</button></a>'
         };
 
         // Create the layer and set the popup
@@ -68,6 +68,136 @@
     <div id="viewDiv" style="height:95%"></div>
   </body>
   <script>
+    var healthData = {
+      belgium: "Watch Level 1, Practice Usual Precautions",
+      barbados: "Alert Level 2, Practice Enhanced Precautions",
+      belize: "Alert Level 2, Practice Enhanced Precautions",
+      "bosnia and herzegovina": "Watch Level 1, Practice Usual Precautions",
+      bonaire: "Alert Level 2, Practice Enhanced Precautions",
+      sudan: "Watch Level 1, Practice Usual Precautions",
+      yemen: "Watch Level 1, Practice Usual Precautions",
+      vietnam: "Watch Level 1, Practice Usual Precautions",
+      venezuela: "Warning Level 3, Avoid Nonessential Travel",
+      uruguay: "Watch Level 1, Practice Usual Precautions",
+      ukraine: "Watch Level 1, Practice Usual Precautions",
+      turkey: "Watch Level 1, Practice Usual Precautions",
+      tonga: "Watch Level 1, Practice Usual Precautions",
+      "trinidad and tobago": "Alert Level 2, Practice Enhanced Precautions",
+      thailand: "Watch Level 1, Practice Usual Precautions",
+      taiwan: "Watch Level 1, Practice Usual Precautions",
+      switzerland: "Watch Level 1, Practice Usual Precautions",
+      "south sudan": "Alert Level 2, Practice Enhanced Precautions",
+      "south korea": "Watch Level 1, Practice Usual Precautions",
+      somalia: "Alert Level 2, Practice Enhanced Precautions",
+      "solomon islands": "Alert Level 2, Practice Enhanced Precautions",
+      slovenia: "Watch Level 1, Practice Usual Precautions",
+      slovakia: "Watch Level 1, Practice Usual Precautions",
+      "sint maarten": "Alert Level 2, Practice Enhanced Precautions",
+      "sint eustatius": "Alert Level 2, Practice Enhanced Precautions",
+      serbia: "Watch Level 1, Practice Usual Precautions",
+      senegal: "Watch Level 1, Practice Usual Precautions",
+      singapore: "Watch Level 1, Practice Usual Precautions",
+      samoa: "Alert Level 2, Practice Enhanced Precautions",
+      "saint martin": "Alert Level 2, Practice Enhanced Precautions",
+      "saint lucia": "Alert Level 2, Practice Enhanced Precautions",
+      "st kitts and nevis": "Alert Level 2, Practice Enhanced Precautions",
+      "us virgin islands": "Alert Level 2, Practice Enhanced Precautions",
+      saba: "Alert Level 2, Practice Enhanced Precautions",
+      russia: "Watch Level 1, Practice Usual Precautions",
+      romania: "Watch Level 1, Practice Usual Precautions",
+      portugal: "Watch Level 1, Practice Usual Precautions",
+      poland: "Watch Level 1, Practice Usual Precautions",
+      philippines: "Watch Level 1, Practice Usual Precautions",
+      "papua new guinea": "Alert Level 2, Practice Enhanced Precautions",
+      pakistan: "Alert Level 2, Practice Enhanced Precautions",
+      norway: "Watch Level 1, Practice Usual Precautions",
+      "northern mariana islands": "Warning Level 3, Avoid Nonessential Travel",
+      nigeria: "Watch Level 1, Practice Usual Precautions",
+      niger: "Alert Level 2, Practice Enhanced Precautions",
+      netherlands: "Watch Level 1, Practice Usual Precautions",
+      montserrat: "Alert Level 2, Practice Enhanced Precautions",
+      moldova: "Watch Level 1, Practice Usual Precautions",
+      micronesia: "Watch Level 1, Practice Usual Precautions",
+      mexico: "Alert Level 2, Practice Enhanced Precautions",
+      mauritius: "Watch Level 1, Practice Usual Precautions",
+      malta: "Watch Level 1, Practice Usual Precautions",
+      "macau sar": "Watch Level 1, Practice Usual Precautions",
+      malaysia: "Watch Level 1, Practice Usual Precautions",
+      lithuania: "Watch Level 1, Practice Usual Precautions",
+      madagascar: "Watch Level 1, Practice Usual Precautions",
+      macedonia: "Watch Level 1, Practice Usual Precautions",
+      luxembourg: "Watch Level 1, Practice Usual Precautions",
+      laos: "Watch Level 1, Practice Usual Precautions",
+      kyrgyzstan: "Watch Level 1, Practice Usual Precautions",
+      kazakhstan: "Watch Level 1, Practice Usual Precautions",
+      japan: "Alert Level 2, Practice Enhanced Precautions",
+      kenya: "Watch Level 1, Practice Usual Precautions",
+      israel: "Watch Level 1, Practice Usual Precautions",
+      indonesia: "Watch Level 1, Practice Usual Precautions",
+      india: "Alert Level 2, Practice Enhanced Precautions",
+      "hong kong sar": "Watch Level 1, Practice Usual Precautions",
+      italy: "Watch Level 1, Practice Usual Precautions",
+      "guinea bissau": "Alert Level 2, Practice Enhanced Precautions",
+      "saint vincent and the grenadines":
+        "Alert Level 2, Practice Enhanced Precautions",
+      greece: "Watch Level 1, Practice Usual Precautions",
+      grenada: "Alert Level 2, Practice Enhanced Precautions",
+      france: "Watch Level 1, Practice Usual Precautions",
+      ethiopia: "Watch Level 1, Practice Usual Precautions",
+      "united kingdom": "Watch Level 1, Practice Usual Precautions",
+      dominica: "Alert Level 2, Practice Enhanced Precautions",
+      "congo drc": "Watch Level 1, Practice Usual Precautions",
+      curacao: "Alert Level 2, Practice Enhanced Precautions",
+      cuba: "Alert Level 2, Practice Enhanced Precautions",
+      colombia: "Watch Level 1, Practice Usual Precautions",
+      china: "Watch Level 1, Practice Usual Precautions",
+      chad: "Alert Level 2, Practice Enhanced Precautions",
+      cameroon: "Alert Level 2, Practice Enhanced Precautions",
+      "turks and caicos": "Alert Level 2, Practice Enhanced Precautions",
+      brazil: "Watch Level 1, Practice Usual Precautions",
+      australia: "Watch Level 1, Practice Usual Precautions",
+      aruba: "Alert Level 2, Practice Enhanced Precautions",
+      argentina: "Watch Level 1, Practice Usual Precautions",
+      "antigua and barbuda": "Alert Level 2, Practice Enhanced Precautions",
+      "british virgin islands": "Alert Level 2, Practice Enhanced Precautions",
+      anguilla: "Alert Level 2, Practice Enhanced Precautions",
+      angola: "Alert Level 2, Practice Enhanced Precautions"
+    };
+    mexicoStates = [
+      "Aguascalientes",
+      "Baja California",
+      "Baja California Sur",
+      "Chihuahua",
+      "Colima",
+      "Campeche",
+      "Coahuila",
+      "Chiapas",
+      "Distrito Federal",
+      "Durango",
+      "Guerrero",
+      "Guanajuato",
+      "Hidalgo",
+      "Jalisco",
+      "México",
+      "Michoacán",
+      "Morelos",
+      "Nayarit",
+      "Nuevo León",
+      "Oaxaca",
+      "Puebla",
+      "Querétaro",
+      "Quintana Roo",
+      "Sinaloa",
+      "San Luis Potosí",
+      "Sonora",
+      "Tabasco",
+      "Tlaxcala",
+      "Tamaulipas",
+      "Veracruz",
+      "Yucatán",
+      "Zacatecas"
+    ];
+    console.log(healthData);
     airQuality = function(value, key, data) {
       return data.NAME + " air quality";
     };
@@ -75,6 +205,13 @@
       return data.NAME + " water quality";
     };
     healthAdvisory = function(value, key, data) {
+      country = value.toLowerCase();
+      if (mexicoStates.includes(data.NAME)) {
+        country = "mexico";
+      }
+      if (healthData[country] != undefined) {
+        return "<b>Health Data:</b> " + healthData[country];
+      }
       return "";
     };
   </script>
