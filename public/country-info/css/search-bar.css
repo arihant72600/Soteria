@@ -1,0 +1,36 @@
+.search-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0px;
+  font-family: Futura, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+}
+
+.search {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin-bottom: auto;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.search-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+  width: 100px;
+  height: 50px;
+  background-color: #4030e8;
+}
+
+.image-3 {
+  position: relative;
+  top: 11px;
+  right: 33px;
+  z-index: 10;
+}
