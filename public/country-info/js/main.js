@@ -11,7 +11,7 @@ function findGetParameter(parameterName) {
   return result;
 }
 
-countryName = findGetParameter("name");
+countryName = findGetParameter("name").replace("+", " ");
 
 document.getElementById("Country").innerText = countryName;
 
