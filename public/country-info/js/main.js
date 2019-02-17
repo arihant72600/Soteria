@@ -3196,7 +3196,8 @@ fetch("https://api.openaq.org/v1/countries")
           '"Good" AQI is 0 to 50. Air quality is considered satisfactory, and air pollution poses little or no risk.';
         document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "#d0e6a5";
       }
-      document.getElementById("air-description").innerText = insertText;
+      if (!isNaN(lowerBound) && !isNaN(upperBound))
+       document.getElementById("air-description").innerText = insertText;
     },
     function(error) {}
   );
