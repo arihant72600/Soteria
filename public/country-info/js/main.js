@@ -119,7 +119,7 @@ travelRisk = [
       "Reconsider travel to Nigeria due to elections, crime, terrorism, civil unrest, and piracy. Do not travel to Borno and Yobe States and northern Adamawa State due to terrorism"
   },
   {
-    Country: "Democratic Republic of the Congo",
+    Country: "Congo DRC",
     "Risk Level": "Level 3: Reconsider Travel",
     "Risk Level Description":
       "Reconsider travel to the Democratic Republic of the Congo (DRC) due to crime and civil unrest. Do not travel to Eastern DRC and the three Kasai provinces due to armed conflict."
