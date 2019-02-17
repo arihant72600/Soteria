@@ -4681,5 +4681,6 @@ if (vaccine[countryName.toLowerCase()] != undefined) {
     innerTable += vaccineDescriptions[vaccines[i]];
     innerTable += "</td></tr>";
   }
+  console.log(innerTable);
   document.getElementById("vaccine-table").innerHTML = innerTable;
 }
