@@ -103,7 +103,7 @@
       "st kitts and nevis": "Alert Level 2, Practice Enhanced Precautions",
       "us virgin islands": "Alert Level 2, Practice Enhanced Precautions",
       saba: "Alert Level 2, Practice Enhanced Precautions",
-      russia: "Watch Level 1, Practice Usual Precautions",
+      "russian federation": "Watch Level 1, Practice Usual Precautions",
       romania: "Watch Level 1, Practice Usual Precautions",
       portugal: "Watch Level 1, Practice Usual Precautions",
       poland: "Watch Level 1, Practice Usual Precautions",
@@ -219,10 +219,11 @@
       if (mexicoStates.includes(data.NAME)) {
         country = "Mexico";
       }
-      return;
-      '<a href="country-info/index.html?name=' +
+      return (
+        '<a href="country-info/index.html?name=' +
         country +
-        "<button>More Info</button>  </a>";
+        '"><button>More Info</button></a>'
+      );
     };
   </script>
 </html>
