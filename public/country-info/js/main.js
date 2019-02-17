@@ -1405,6 +1405,737 @@ if (healthSummaries[countryName.toLowerCase()] != undefined) {
   document.getElementById("health-warning-descripton").innerText = summary;
 }
 
+var epiScores = [
+  {
+    Country: "Afghanistan",
+    EPI2018Score: 37.74
+  },
+  {
+    Country: "Albania",
+    EPI2018Score: 65.46
+  },
+  {
+    Country: "Algeria",
+    EPI2018Score: 57.18
+  },
+  {
+    Country: "Angola",
+    EPI2018Score: 37.44
+  },
+  {
+    Country: "Antigua and Barbuda",
+    EPI2018Score: 59.18
+  },
+  {
+    Country: "Argentina",
+    EPI2018Score: 59.3
+  },
+  {
+    Country: "Armenia",
+    EPI2018Score: 62.07
+  },
+  {
+    Country: "Australia",
+    EPI2018Score: 74.12
+  },
+  {
+    Country: "Austria",
+    EPI2018Score: 78.97
+  },
+  {
+    Country: "Azerbaijan",
+    EPI2018Score: 62.33
+  },
+  {
+    Country: "Bahamas",
+    EPI2018Score: 54.99
+  },
+  {
+    Country: "Bahrain",
+    EPI2018Score: 55.15
+  },
+  {
+    Country: "Bangladesh",
+    EPI2018Score: 29.56
+  },
+  {
+    Country: "Barbados",
+    EPI2018Score: 55.76
+  },
+  {
+    Country: "Belarus",
+    EPI2018Score: 64.98
+  },
+  {
+    Country: "Belgium",
+    EPI2018Score: 77.38
+  },
+  {
+    Country: "Belize",
+    EPI2018Score: 57.79
+  },
+  {
+    Country: "Benin",
+    EPI2018Score: 38.17
+  },
+  {
+    Country: "Bhutan",
+    EPI2018Score: 47.22
+  },
+  {
+    Country: "Bolivia",
+    EPI2018Score: 55.98
+  },
+  {
+    Country: "Bosnia and Herzegovina",
+    EPI2018Score: 41.84
+  },
+  {
+    Country: "Botswana",
+    EPI2018Score: 51.7
+  },
+  {
+    Country: "Brazil",
+    EPI2018Score: 60.7
+  },
+  {
+    Country: "Brunei Darussalam",
+    EPI2018Score: 63.57
+  },
+  {
+    Country: "Bulgaria",
+    EPI2018Score: 67.85
+  },
+  {
+    Country: "Burkina Faso",
+    EPI2018Score: 42.83
+  },
+  {
+    Country: "Burundi",
+    EPI2018Score: 27.43
+  },
+  {
+    Country: "Côte d'Ivoire",
+    EPI2018Score: 45.25
+  },
+  {
+    Country: "Cabo Verde",
+    EPI2018Score: 56.94
+  },
+  {
+    Country: "Cambodia",
+    EPI2018Score: 43.23
+  },
+  {
+    Country: "Cameroon",
+    EPI2018Score: 40.81
+  },
+  {
+    Country: "Canada",
+    EPI2018Score: 72.18
+  },
+  {
+    Country: "Central African Republic",
+    EPI2018Score: 36.42
+  },
+  {
+    Country: "Chad",
+    EPI2018Score: 45.34
+  },
+  {
+    Country: "Chile",
+    EPI2018Score: 57.49
+  },
+  {
+    Country: "China",
+    EPI2018Score: 50.74
+  },
+  {
+    Country: "Colombia",
+    EPI2018Score: 65.22
+  },
+  {
+    Country: "Comoros",
+    EPI2018Score: 44.24
+  },
+  {
+    Country: "Costa Rica",
+    EPI2018Score: 67.85
+  },
+  {
+    Country: "Croatia",
+    EPI2018Score: 65.45
+  },
+  {
+    Country: "Cuba",
+    EPI2018Score: 63.42
+  },
+  {
+    Country: "Cyprus",
+    EPI2018Score: 72.6
+  },
+  {
+    Country: "Czech Republic",
+    EPI2018Score: 67.68
+  },
+  {
+    Country: "Congo DRC",
+    EPI2018Score: 30.41
+  },
+  {
+    Country: "Denmark",
+    EPI2018Score: 81.6
+  },
+  {
+    Country: "Djibouti",
+    EPI2018Score: 40.04
+  },
+  {
+    Country: "Dominica",
+    EPI2018Score: 59.38
+  },
+  {
+    Country: "Dominican Republic",
+    EPI2018Score: 64.71
+  },
+  {
+    Country: "Ecuador",
+    EPI2018Score: 57.42
+  },
+  {
+    Country: "Egypt",
+    EPI2018Score: 61.21
+  },
+  {
+    Country: "El Salvador",
+    EPI2018Score: 53.91
+  },
+  {
+    Country: "Equatorial Guinea",
+    EPI2018Score: 60.4
+  },
+  {
+    Country: "Eritrea",
+    EPI2018Score: 39.34
+  },
+  {
+    Country: "Estonia",
+    EPI2018Score: 64.31
+  },
+  {
+    Country: "Ethiopia",
+    EPI2018Score: 44.78
+  },
+  {
+    Country: "Fiji",
+    EPI2018Score: 53.09
+  },
+  {
+    Country: "Finland",
+    EPI2018Score: 78.64
+  },
+  {
+    Country: "France",
+    EPI2018Score: 83.95
+  },
+  {
+    Country: "Gabon",
+    EPI2018Score: 45.05
+  },
+  {
+    Country: "Gambia",
+    EPI2018Score: 42.42
+  },
+  {
+    Country: "Georgia",
+    EPI2018Score: 55.69
+  },
+  {
+    Country: "Germany",
+    EPI2018Score: 78.37
+  },
+  {
+    Country: "Ghana",
+    EPI2018Score: 49.66
+  },
+  {
+    Country: "Greece",
+    EPI2018Score: 73.6
+  },
+  {
+    Country: "Grenada",
+    EPI2018Score: 50.93
+  },
+  {
+    Country: "Guatemala",
+    EPI2018Score: 52.33
+  },
+  {
+    Country: "Guinea",
+    EPI2018Score: 46.62
+  },
+  {
+    Country: "Guinea-Bissau",
+    EPI2018Score: 44.67
+  },
+  {
+    Country: "Guyana",
+    EPI2018Score: 47.93
+  },
+  {
+    Country: "Haiti",
+    EPI2018Score: 33.74
+  },
+  {
+    Country: "Honduras",
+    EPI2018Score: 51.51
+  },
+  {
+    Country: "Hungary",
+    EPI2018Score: 65.01
+  },
+  {
+    Country: "Iceland",
+    EPI2018Score: 78.57
+  },
+  {
+    Country: "India",
+    EPI2018Score: 30.57
+  },
+  {
+    Country: "Indonesia",
+    EPI2018Score: 46.92
+  },
+  {
+    Country: "Iran",
+    EPI2018Score: 58.16
+  },
+  {
+    Country: "Iraq",
+    EPI2018Score: 43.2
+  },
+  {
+    Country: "Ireland",
+    EPI2018Score: 78.77
+  },
+  {
+    Country: "Israel",
+    EPI2018Score: 75.01
+  },
+  {
+    Country: "Italy",
+    EPI2018Score: 76.96
+  },
+  {
+    Country: "Jamaica",
+    EPI2018Score: 58.58
+  },
+  {
+    Country: "Japan",
+    EPI2018Score: 74.69
+  },
+  {
+    Country: "Jordan",
+    EPI2018Score: 62.2
+  },
+  {
+    Country: "Kazakhstan",
+    EPI2018Score: 54.56
+  },
+  {
+    Country: "Kenya",
+    EPI2018Score: 47.25
+  },
+  {
+    Country: "Kiribati",
+    EPI2018Score: 55.26
+  },
+  {
+    Country: "Kuwait",
+    EPI2018Score: 62.28
+  },
+  {
+    Country: "Kyrgyzstan",
+    EPI2018Score: 54.86
+  },
+  {
+    Country: "Laos",
+    EPI2018Score: 42.94
+  },
+  {
+    Country: "Latvia",
+    EPI2018Score: 66.12
+  },
+  {
+    Country: "Lebanon",
+    EPI2018Score: 61.08
+  },
+  {
+    Country: "Lesotho",
+    EPI2018Score: 33.78
+  },
+  {
+    Country: "Liberia",
+    EPI2018Score: 41.62
+  },
+  {
+    Country: "Libya",
+    EPI2018Score: 49.79
+  },
+  {
+    Country: "Lithuania",
+    EPI2018Score: 69.33
+  },
+  {
+    Country: "Luxembourg",
+    EPI2018Score: 79.12
+  },
+  {
+    Country: "Macedonia",
+    EPI2018Score: 61.06
+  },
+  {
+    Country: "Madagascar",
+    EPI2018Score: 33.73
+  },
+  {
+    Country: "Malawi",
+    EPI2018Score: 49.21
+  },
+  {
+    Country: "Malaysia",
+    EPI2018Score: 59.22
+  },
+  {
+    Country: "Maldives",
+    EPI2018Score: 52.14
+  },
+  {
+    Country: "Mali",
+    EPI2018Score: 43.71
+  },
+  {
+    Country: "Malta",
+    EPI2018Score: 80.9
+  },
+  {
+    Country: "Mauritania",
+    EPI2018Score: 39.24
+  },
+  {
+    Country: "Mauritius",
+    EPI2018Score: 56.63
+  },
+  {
+    Country: "Mexico",
+    EPI2018Score: 59.69
+  },
+  {
+    Country: "Micronesia",
+    EPI2018Score: 49.8
+  },
+  {
+    Country: "Moldova",
+    EPI2018Score: 51.97
+  },
+  {
+    Country: "Mongolia",
+    EPI2018Score: 57.51
+  },
+  {
+    Country: "Montenegro",
+    EPI2018Score: 61.33
+  },
+  {
+    Country: "Morocco",
+    EPI2018Score: 63.47
+  },
+  {
+    Country: "Mozambique",
+    EPI2018Score: 46.37
+  },
+  {
+    Country: "Myanmar",
+    EPI2018Score: 45.32
+  },
+  {
+    Country: "Namibia",
+    EPI2018Score: 58.46
+  },
+  {
+    Country: "Nepal",
+    EPI2018Score: 31.44
+  },
+  {
+    Country: "Netherlands",
+    EPI2018Score: 75.46
+  },
+  {
+    Country: "New Zealand",
+    EPI2018Score: 75.96
+  },
+  {
+    Country: "Nicaragua",
+    EPI2018Score: 55.04
+  },
+  {
+    Country: "Niger",
+    EPI2018Score: 35.74
+  },
+  {
+    Country: "Nigeria",
+    EPI2018Score: 54.76
+  },
+  {
+    Country: "Norway",
+    EPI2018Score: 77.49
+  },
+  {
+    Country: "Oman",
+    EPI2018Score: 51.32
+  },
+  {
+    Country: "Pakistan",
+    EPI2018Score: 37.5
+  },
+  {
+    Country: "Panama",
+    EPI2018Score: 62.71
+  },
+  {
+    Country: "Papua New Guinea",
+    EPI2018Score: 39.35
+  },
+  {
+    Country: "Paraguay",
+    EPI2018Score: 53.93
+  },
+  {
+    Country: "Peru",
+    EPI2018Score: 61.92
+  },
+  {
+    Country: "Philippines",
+    EPI2018Score: 57.65
+  },
+  {
+    Country: "Poland",
+    EPI2018Score: 64.11
+  },
+  {
+    Country: "Portugal",
+    EPI2018Score: 71.91
+  },
+  {
+    Country: "Qatar",
+    EPI2018Score: 67.8
+  },
+  {
+    Country: "Republic of Congo",
+    EPI2018Score: 42.39
+  },
+  {
+    Country: "Romania",
+    EPI2018Score: 64.78
+  },
+  {
+    Country: "Russian Federation",
+    EPI2018Score: 63.79
+  },
+  {
+    Country: "Rwanda",
+    EPI2018Score: 43.68
+  },
+  {
+    Country: "Sao Tome and Principe",
+    EPI2018Score: 54.01
+  },
+  {
+    Country: "Saint Lucia",
+    EPI2018Score: 56.18
+  },
+  {
+    Country: "Saint Vincent and the Grenadines",
+    EPI2018Score: 66.48
+  },
+  {
+    Country: "Samoa",
+    EPI2018Score: 54.5
+  },
+  {
+    Country: "Saudi Arabia",
+    EPI2018Score: 57.47
+  },
+  {
+    Country: "Senegal",
+    EPI2018Score: 49.52
+  },
+  {
+    Country: "Serbia",
+    EPI2018Score: 57.49
+  },
+  {
+    Country: "Seychelles",
+    EPI2018Score: 66.02
+  },
+  {
+    Country: "Sierra Leone",
+    EPI2018Score: 42.54
+  },
+  {
+    Country: "Singapore",
+    EPI2018Score: 64.23
+  },
+  {
+    Country: "Slovakia",
+    EPI2018Score: 70.6
+  },
+  {
+    Country: "Slovenia",
+    EPI2018Score: 67.57
+  },
+  {
+    Country: "Solomon Islands",
+    EPI2018Score: 43.22
+  },
+  {
+    Country: "South Africa",
+    EPI2018Score: 44.73
+  },
+  {
+    Country: "South Korea",
+    EPI2018Score: 62.3
+  },
+  {
+    Country: "Spain",
+    EPI2018Score: 78.39
+  },
+  {
+    Country: "Sri Lanka",
+    EPI2018Score: 60.61
+  },
+  {
+    Country: "Sudan",
+    EPI2018Score: 51.49
+  },
+  {
+    Country: "Suriname",
+    EPI2018Score: 54.2
+  },
+  {
+    Country: "Swaziland",
+    EPI2018Score: 40.32
+  },
+  {
+    Country: "Sweden",
+    EPI2018Score: 80.51
+  },
+  {
+    Country: "Switzerland",
+    EPI2018Score: 87.42
+  },
+  {
+    Country: "Taiwan",
+    EPI2018Score: 72.84
+  },
+  {
+    Country: "Tajikistan",
+    EPI2018Score: 47.85
+  },
+  {
+    Country: "Tanzania",
+    EPI2018Score: 50.83
+  },
+  {
+    Country: "Thailand",
+    EPI2018Score: 49.88
+  },
+  {
+    Country: "Timor-Leste",
+    EPI2018Score: 49.54
+  },
+  {
+    Country: "Togo",
+    EPI2018Score: 41.78
+  },
+  {
+    Country: "Tonga",
+    EPI2018Score: 62.49
+  },
+  {
+    Country: "Trinidad and Tobago",
+    EPI2018Score: 67.36
+  },
+  {
+    Country: "Tunisia",
+    EPI2018Score: 62.35
+  },
+  {
+    Country: "Turkey",
+    EPI2018Score: 52.96
+  },
+  {
+    Country: "Turkmenistan",
+    EPI2018Score: 66.1
+  },
+  {
+    Country: "Uganda",
+    EPI2018Score: 44.28
+  },
+  {
+    Country: "Ukraine",
+    EPI2018Score: 52.87
+  },
+  {
+    Country: "United Arab Emirates",
+    EPI2018Score: 58.9
+  },
+  {
+    Country: "United Kingdom",
+    EPI2018Score: 79.89
+  },
+  {
+    Country: "United States of America",
+    EPI2018Score: 71.19
+  },
+  {
+    Country: "Uruguay",
+    EPI2018Score: 64.65
+  },
+  {
+    Country: "Uzbekistan",
+    EPI2018Score: 45.88
+  },
+  {
+    Country: "Vanuatu",
+    EPI2018Score: 44.55
+  },
+  {
+    Country: "Venezuela",
+    EPI2018Score: 63.89
+  },
+  {
+    Country: "Vietnam",
+    EPI2018Score: 46.96
+  },
+  {
+    Country: "Zambia",
+    EPI2018Score: 50.97
+  },
+  {
+    Country: "Zimbabwe",
+    EPI2018Score: 43.41
+  }
+];
+
+var arrayLength = epiScores.length;
+
+for (var i = 0; i < arrayLength; i++) {
+  if (epiScores[i].Country.toLowerCase() == countryName.toLowerCase()) {
+    document.getElementById("epi-score").innerText = epiScores[i].EPI2018Score;
+  }
+}
+
 var waterScores = [
   {
     "Countries and Area": "Afghanistan",
@@ -2332,733 +3063,1574 @@ var waterScores = [
   }
 ];
 
-var epiScores = [
-  {
-    Country: "Afghanistan",
-    EPI2018Score: 37.74
-  },
-  {
-    Country: "Albania",
-    EPI2018Score: 65.46
-  },
-  {
-    Country: "Algeria",
-    EPI2018Score: 57.18
-  },
-  {
-    Country: "Angola",
-    EPI2018Score: 37.44
-  },
-  {
-    Country: "Antigua and Barbuda",
-    EPI2018Score: 59.18
-  },
-  {
-    Country: "Argentina",
-    EPI2018Score: 59.3
-  },
-  {
-    Country: "Armenia",
-    EPI2018Score: 62.07
-  },
-  {
-    Country: "Australia",
-    EPI2018Score: 74.12
-  },
-  {
-    Country: "Austria",
-    EPI2018Score: 78.97
-  },
-  {
-    Country: "Azerbaijan",
-    EPI2018Score: 62.33
-  },
-  {
-    Country: "Bahamas",
-    EPI2018Score: 54.99
-  },
-  {
-    Country: "Bahrain",
-    EPI2018Score: 55.15
-  },
-  {
-    Country: "Bangladesh",
-    EPI2018Score: 29.56
-  },
-  {
-    Country: "Barbados",
-    EPI2018Score: 55.76
-  },
-  {
-    Country: "Belarus",
-    EPI2018Score: 64.98
-  },
-  {
-    Country: "Belgium",
-    EPI2018Score: 77.38
-  },
-  {
-    Country: "Belize",
-    EPI2018Score: 57.79
-  },
-  {
-    Country: "Benin",
-    EPI2018Score: 38.17
-  },
-  {
-    Country: "Bhutan",
-    EPI2018Score: 47.22
-  },
-  {
-    Country: "Bolivia",
-    EPI2018Score: 55.98
-  },
-  {
-    Country: "Bosnia and Herzegovina",
-    EPI2018Score: 41.84
-  },
-  {
-    Country: "Botswana",
-    EPI2018Score: 51.7
-  },
-  {
-    Country: "Brazil",
-    EPI2018Score: 60.7
-  },
-  {
-    Country: "Brunei Darussalam",
-    EPI2018Score: 63.57
-  },
-  {
-    Country: "Bulgaria",
-    EPI2018Score: 67.85
-  },
-  {
-    Country: "Burkina Faso",
-    EPI2018Score: 42.83
-  },
-  {
-    Country: "Burundi",
-    EPI2018Score: 27.43
-  },
-  {
-    Country: "Côte d'Ivoire",
-    EPI2018Score: 45.25
-  },
-  {
-    Country: "Cabo Verde",
-    EPI2018Score: 56.94
-  },
-  {
-    Country: "Cambodia",
-    EPI2018Score: 43.23
-  },
-  {
-    Country: "Cameroon",
-    EPI2018Score: 40.81
-  },
-  {
-    Country: "Canada",
-    EPI2018Score: 72.18
-  },
-  {
-    Country: "Central African Republic",
-    EPI2018Score: 36.42
-  },
-  {
-    Country: "Chad",
-    EPI2018Score: 45.34
-  },
-  {
-    Country: "Chile",
-    EPI2018Score: 57.49
-  },
-  {
-    Country: "China",
-    EPI2018Score: 50.74
-  },
-  {
-    Country: "Colombia",
-    EPI2018Score: 65.22
-  },
-  {
-    Country: "Comoros",
-    EPI2018Score: 44.24
-  },
-  {
-    Country: "Costa Rica",
-    EPI2018Score: 67.85
-  },
-  {
-    Country: "Croatia",
-    EPI2018Score: 65.45
-  },
-  {
-    Country: "Cuba",
-    EPI2018Score: 63.42
-  },
-  {
-    Country: "Cyprus",
-    EPI2018Score: 72.6
-  },
-  {
-    Country: "Czech Republic",
-    EPI2018Score: 67.68
-  },
-  {
-    Country: "Congo DRC",
-    EPI2018Score: 30.41
-  },
-  {
-    Country: "Denmark",
-    EPI2018Score: 81.6
-  },
-  {
-    Country: "Djibouti",
-    EPI2018Score: 40.04
-  },
-  {
-    Country: "Dominica",
-    EPI2018Score: 59.38
-  },
-  {
-    Country: "Dominican Republic",
-    EPI2018Score: 64.71
-  },
-  {
-    Country: "Ecuador",
-    EPI2018Score: 57.42
-  },
-  {
-    Country: "Egypt",
-    EPI2018Score: 61.21
-  },
-  {
-    Country: "El Salvador",
-    EPI2018Score: 53.91
-  },
-  {
-    Country: "Equatorial Guinea",
-    EPI2018Score: 60.4
-  },
-  {
-    Country: "Eritrea",
-    EPI2018Score: 39.34
-  },
-  {
-    Country: "Estonia",
-    EPI2018Score: 64.31
-  },
-  {
-    Country: "Ethiopia",
-    EPI2018Score: 44.78
-  },
-  {
-    Country: "Fiji",
-    EPI2018Score: 53.09
-  },
-  {
-    Country: "Finland",
-    EPI2018Score: 78.64
-  },
-  {
-    Country: "France",
-    EPI2018Score: 83.95
-  },
-  {
-    Country: "Gabon",
-    EPI2018Score: 45.05
-  },
-  {
-    Country: "Gambia",
-    EPI2018Score: 42.42
-  },
-  {
-    Country: "Georgia",
-    EPI2018Score: 55.69
-  },
-  {
-    Country: "Germany",
-    EPI2018Score: 78.37
-  },
-  {
-    Country: "Ghana",
-    EPI2018Score: 49.66
-  },
-  {
-    Country: "Greece",
-    EPI2018Score: 73.6
-  },
-  {
-    Country: "Grenada",
-    EPI2018Score: 50.93
-  },
-  {
-    Country: "Guatemala",
-    EPI2018Score: 52.33
-  },
-  {
-    Country: "Guinea",
-    EPI2018Score: 46.62
-  },
-  {
-    Country: "Guinea-Bissau",
-    EPI2018Score: 44.67
-  },
-  {
-    Country: "Guyana",
-    EPI2018Score: 47.93
-  },
-  {
-    Country: "Haiti",
-    EPI2018Score: 33.74
-  },
-  {
-    Country: "Honduras",
-    EPI2018Score: 51.51
-  },
-  {
-    Country: "Hungary",
-    EPI2018Score: 65.01
-  },
-  {
-    Country: "Iceland",
-    EPI2018Score: 78.57
-  },
-  {
-    Country: "India",
-    EPI2018Score: 30.57
-  },
-  {
-    Country: "Indonesia",
-    EPI2018Score: 46.92
-  },
-  {
-    Country: "Iran",
-    EPI2018Score: 58.16
-  },
-  {
-    Country: "Iraq",
-    EPI2018Score: 43.2
-  },
-  {
-    Country: "Ireland",
-    EPI2018Score: 78.77
-  },
-  {
-    Country: "Israel",
-    EPI2018Score: 75.01
-  },
-  {
-    Country: "Italy",
-    EPI2018Score: 76.96
-  },
-  {
-    Country: "Jamaica",
-    EPI2018Score: 58.58
-  },
-  {
-    Country: "Japan",
-    EPI2018Score: 74.69
-  },
-  {
-    Country: "Jordan",
-    EPI2018Score: 62.2
-  },
-  {
-    Country: "Kazakhstan",
-    EPI2018Score: 54.56
-  },
-  {
-    Country: "Kenya",
-    EPI2018Score: 47.25
-  },
-  {
-    Country: "Kiribati",
-    EPI2018Score: 55.26
-  },
-  {
-    Country: "Kuwait",
-    EPI2018Score: 62.28
-  },
-  {
-    Country: "Kyrgyzstan",
-    EPI2018Score: 54.86
-  },
-  {
-    Country: "Laos",
-    EPI2018Score: 42.94
-  },
-  {
-    Country: "Latvia",
-    EPI2018Score: 66.12
-  },
-  {
-    Country: "Lebanon",
-    EPI2018Score: 61.08
-  },
-  {
-    Country: "Lesotho",
-    EPI2018Score: 33.78
-  },
-  {
-    Country: "Liberia",
-    EPI2018Score: 41.62
-  },
-  {
-    Country: "Libya",
-    EPI2018Score: 49.79
-  },
-  {
-    Country: "Lithuania",
-    EPI2018Score: 69.33
-  },
-  {
-    Country: "Luxembourg",
-    EPI2018Score: 79.12
-  },
-  {
-    Country: "Macedonia",
-    EPI2018Score: 61.06
-  },
-  {
-    Country: "Madagascar",
-    EPI2018Score: 33.73
-  },
-  {
-    Country: "Malawi",
-    EPI2018Score: 49.21
-  },
-  {
-    Country: "Malaysia",
-    EPI2018Score: 59.22
-  },
-  {
-    Country: "Maldives",
-    EPI2018Score: 52.14
-  },
-  {
-    Country: "Mali",
-    EPI2018Score: 43.71
-  },
-  {
-    Country: "Malta",
-    EPI2018Score: 80.9
-  },
-  {
-    Country: "Mauritania",
-    EPI2018Score: 39.24
-  },
-  {
-    Country: "Mauritius",
-    EPI2018Score: 56.63
-  },
-  {
-    Country: "Mexico",
-    EPI2018Score: 59.69
-  },
-  {
-    Country: "Micronesia",
-    EPI2018Score: 49.8
-  },
-  {
-    Country: "Moldova",
-    EPI2018Score: 51.97
-  },
-  {
-    Country: "Mongolia",
-    EPI2018Score: 57.51
-  },
-  {
-    Country: "Montenegro",
-    EPI2018Score: 61.33
-  },
-  {
-    Country: "Morocco",
-    EPI2018Score: 63.47
-  },
-  {
-    Country: "Mozambique",
-    EPI2018Score: 46.37
-  },
-  {
-    Country: "Myanmar",
-    EPI2018Score: 45.32
-  },
-  {
-    Country: "Namibia",
-    EPI2018Score: 58.46
-  },
-  {
-    Country: "Nepal",
-    EPI2018Score: 31.44
-  },
-  {
-    Country: "Netherlands",
-    EPI2018Score: 75.46
-  },
-  {
-    Country: "New Zealand",
-    EPI2018Score: 75.96
-  },
-  {
-    Country: "Nicaragua",
-    EPI2018Score: 55.04
-  },
-  {
-    Country: "Niger",
-    EPI2018Score: 35.74
-  },
-  {
-    Country: "Nigeria",
-    EPI2018Score: 54.76
-  },
-  {
-    Country: "Norway",
-    EPI2018Score: 77.49
-  },
-  {
-    Country: "Oman",
-    EPI2018Score: 51.32
-  },
-  {
-    Country: "Pakistan",
-    EPI2018Score: 37.5
-  },
-  {
-    Country: "Panama",
-    EPI2018Score: 62.71
-  },
-  {
-    Country: "Papua New Guinea",
-    EPI2018Score: 39.35
-  },
-  {
-    Country: "Paraguay",
-    EPI2018Score: 53.93
-  },
-  {
-    Country: "Peru",
-    EPI2018Score: 61.92
-  },
-  {
-    Country: "Philippines",
-    EPI2018Score: 57.65
-  },
-  {
-    Country: "Poland",
-    EPI2018Score: 64.11
-  },
-  {
-    Country: "Portugal",
-    EPI2018Score: 71.91
-  },
-  {
-    Country: "Qatar",
-    EPI2018Score: 67.8
-  },
-  {
-    Country: "Republic of Congo",
-    EPI2018Score: 42.39
-  },
-  {
-    Country: "Romania",
-    EPI2018Score: 64.78
-  },
-  {
-    Country: "Russia",
-    EPI2018Score: 63.79
-  },
-  {
-    Country: "Rwanda",
-    EPI2018Score: 43.68
-  },
-  {
-    Country: "Sao Tome and Principe",
-    EPI2018Score: 54.01
-  },
-  {
-    Country: "Saint Lucia",
-    EPI2018Score: 56.18
-  },
-  {
-    Country: "Saint Vincent and the Grenadines",
-    EPI2018Score: 66.48
-  },
-  {
-    Country: "Samoa",
-    EPI2018Score: 54.5
-  },
-  {
-    Country: "Saudi Arabia",
-    EPI2018Score: 57.47
-  },
-  {
-    Country: "Senegal",
-    EPI2018Score: 49.52
-  },
-  {
-    Country: "Serbia",
-    EPI2018Score: 57.49
-  },
-  {
-    Country: "Seychelles",
-    EPI2018Score: 66.02
-  },
-  {
-    Country: "Sierra Leone",
-    EPI2018Score: 42.54
-  },
-  {
-    Country: "Singapore",
-    EPI2018Score: 64.23
-  },
-  {
-    Country: "Slovakia",
-    EPI2018Score: 70.6
-  },
-  {
-    Country: "Slovenia",
-    EPI2018Score: 67.57
-  },
-  {
-    Country: "Solomon Islands",
-    EPI2018Score: 43.22
-  },
-  {
-    Country: "South Africa",
-    EPI2018Score: 44.73
-  },
-  {
-    Country: "South Korea",
-    EPI2018Score: 62.3
-  },
-  {
-    Country: "Spain",
-    EPI2018Score: 78.39
-  },
-  {
-    Country: "Sri Lanka",
-    EPI2018Score: 60.61
-  },
-  {
-    Country: "Sudan",
-    EPI2018Score: 51.49
-  },
-  {
-    Country: "Suriname",
-    EPI2018Score: 54.2
-  },
-  {
-    Country: "Swaziland",
-    EPI2018Score: 40.32
-  },
-  {
-    Country: "Sweden",
-    EPI2018Score: 80.51
-  },
-  {
-    Country: "Switzerland",
-    EPI2018Score: 87.42
-  },
-  {
-    Country: "Taiwan",
-    EPI2018Score: 72.84
-  },
-  {
-    Country: "Tajikistan",
-    EPI2018Score: 47.85
-  },
-  {
-    Country: "Tanzania",
-    EPI2018Score: 50.83
-  },
-  {
-    Country: "Thailand",
-    EPI2018Score: 49.88
-  },
-  {
-    Country: "Timor-Leste",
-    EPI2018Score: 49.54
-  },
-  {
-    Country: "Togo",
-    EPI2018Score: 41.78
-  },
-  {
-    Country: "Tonga",
-    EPI2018Score: 62.49
-  },
-  {
-    Country: "Trinidad and Tobago",
-    EPI2018Score: 67.36
-  },
-  {
-    Country: "Tunisia",
-    EPI2018Score: 62.35
-  },
-  {
-    Country: "Turkey",
-    EPI2018Score: 52.96
-  },
-  {
-    Country: "Turkmenistan",
-    EPI2018Score: 66.1
-  },
-  {
-    Country: "Uganda",
-    EPI2018Score: 44.28
-  },
-  {
-    Country: "Ukraine",
-    EPI2018Score: 52.87
-  },
-  {
-    Country: "United Arab Emirates",
-    EPI2018Score: 58.9
-  },
-  {
-    Country: "United Kingdom",
-    EPI2018Score: 79.89
-  },
-  {
-    Country: "United States of America",
-    EPI2018Score: 71.19
-  },
-  {
-    Country: "Uruguay",
-    EPI2018Score: 64.65
-  },
-  {
-    Country: "Uzbekistan",
-    EPI2018Score: 45.88
-  },
-  {
-    Country: "Vanuatu",
-    EPI2018Score: 44.55
-  },
-  {
-    Country: "Venezuela",
-    EPI2018Score: 63.89
-  },
-  {
-    Country: "Vietnam",
-    EPI2018Score: 46.96
-  },
-  {
-    Country: "Zambia",
-    EPI2018Score: 50.97
-  },
-  {
-    Country: "Zimbabwe",
-    EPI2018Score: 43.41
-  }
-];
-
-var arrayLength = epiScores.length;
+var arrayLength = waterScores.length;
 
 for (var i = 0; i < arrayLength; i++) {
-  if (epiScores[i].Country.toLowerCase() == countryName.toLowerCase()) {
-    document.getElementById("epi-score").innerText = epiScores[i].EPI2018Score;
+  if (
+    waterScores[i]["Countries and Area"].toLowerCase() ==
+    countryName.toLowerCase()
+  ) {
+    document.getElementById("water-level").innerText =
+      waterScores[i]["Clean Water Score"];
+    if (waterScores[i]["Clean Water Score"] >= 90) {
+      document.getElementById("water-description").innerText =
+        "Clean – Safe water source is widely available. Most of the country’s water source is improved (piped household water connection located inside the user’s dwelling, plot or yard)";
+    }
+    if (waterScores[i]["Clean Water Score"] < 70) {
+      document.getElementById("water-description").innerText =
+        "Dangerous -  Low access to safe water source, low proportion of water source is improved (piped household water connection located inside the user’s dwelling, plot or yard). Public water is not safe to consume";
+    }
+    if (
+      waterScores[i]["Clean Water Score"] >= 70 &&
+      waterScores[i]["Clean Water Score"] < 90
+    ) {
+      document.getElementById("water-description").innerText =
+        "Moderate – Medium access to safe water source. Safe water source will typically be available in urban areas";
+    }
   }
+}
+
+function standardDeviation(values) {
+  var avg = average(values);
+
+  var squareDiffs = values.map(function(value) {
+    var diff = value - avg;
+    var sqrDiff = diff * diff;
+    return sqrDiff;
+  });
+
+  var avgSquareDiff = average(squareDiffs);
+
+  var stdDev = Math.sqrt(avgSquareDiff);
+  return stdDev;
+}
+
+function average(data) {
+  var sum = data.reduce(function(sum, value) {
+    return sum + value;
+  }, 0);
+
+  var avg = sum / data.length;
+  return avg;
+}
+
+fetch("https://api.openaq.org/v1/countries")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    var countryCodes = myJson.results;
+    var numCodes = countryCodes.length;
+    for (var i = 0; i < numCodes; i++) {
+      if (countryCodes[i].name.toLowerCase() == countryName.toLowerCase()) {
+        return fetch(
+          "https://api.openaq.org/v1/latest?country=" + countryCodes[i].code
+        );
+      }
+    }
+  })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(
+    function(myJson) {
+      var airResults = myJson.results;
+      console.log(airResults);
+      var pm25Values = [];
+      for (var i = 0; i < airResults.length; i++) {
+        var measurements = airResults[i].measurements;
+        for (var j = 0; j < measurements.length; j++) {
+          if (measurements[j].parameter == "pm25") {
+            pm25Values.push(measurements[j].value);
+          }
+        }
+      }
+      pm25Average = average(pm25Values);
+      pm24stdDev = standardDeviation(pm25Values);
+      var lowerBound = pm25Average - 1.2 * pm24stdDev;
+      var upperBound = pm25Average + 1.2 * pm24stdDev;
+      if (lowerBound < 0) lowerBound = 0;
+      lowerBound = Math.round(lowerBound * 10) / 10;
+      upperBound = Math.round(upperBound * 10) / 10;
+      console.log(pm25Values);
+      console.log(lowerBound);
+      console.log(upperBound);
+      if (!isNaN(lowerBound) && !isNaN(upperBound))
+        document.getElementById("air-quality").innerText =
+          lowerBound + " - " + upperBound;
+      if (pm25Average > 300) {
+        var insertText =
+          'Hazardous" AQI greater than 300. This would trigger a health warnings of emergency conditions. The entire population is more likely to be affected.';
+      }
+      if (pm25Average > 200) {
+        var insertText =
+          '"Very Unhealthy" AQI is 201 to 300. This would trigger a health alert signifying that everyone may experience more serious health effects.';
+      }
+      if (pm25Average > 150) {
+        var insertText =
+          '"Unhealthy" AQI is 151 to 200. Everyone may begin to experience some adverse health effects, and members of the sensitive groups may experience more serious effects.';
+      }
+      if (pm25Average > 100) {
+        var insertText =
+          '"Unhealthy for Sensitive Groups" AQI is 101 to 150. Although general public is not likely to be affected at this AQI range, people with lung disease, older adults and children are at a greater risk from exposure to ozone, whereas persons with heart and lung disease, older adults and children are at greater risk from the presence of particles in the air.';
+      }
+      if (pm25Average > 50) {
+        var insertText =
+          '"Moderate" AQI is 51 to 100. Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people. For example, people who are unusually sensitive to ozone may experience respiratory symptoms.';
+      }
+      if (pm25Average > 0) {
+        var insertText =
+          '"Good" AQI is 0 to 50. Air quality is considered satisfactory, and air pollution poses little or no risk.';
+      }
+      document.getElementById("air-description").innerText = insertText;
+    },
+    function(error) {}
+  );
+
+var vaccine = {
+  afghanistan: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Poliomyelitis",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  belarus: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  barbados: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  bangladesh: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  bhutan: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  bonaire: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  belgium: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  bahrain: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  bolivia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  benin: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  bermuda: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  belize: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever",
+    "Malaria"
+  ],
+  bahamas: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  azerbaijan: ["Routine", "Hepatitis A", "Hepatitis B", "Malaria", "Rabies"],
+  "czech republic": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  maldives: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  azores: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  zimbabwe: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  zambia: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  austria: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  yemen: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  "western sahara": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  "wake Island": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  vietnam: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Japanese encephalitis",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  venezuela: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  vanuatu: ["Routine", "Hepatitis A", "Malaria", "Typhoid", "Hepatitis B"],
+  uzbekistan: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  uruguay: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  "united states": [],
+  ukraine: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  uganda: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Cholera",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  tuvalu: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  turkmenistan: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  turkey: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  tunisia: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  tonga: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  tokelau: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  togo: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  "trinidad and tobago": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "east timor": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  thailand: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  tanzania: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  tajikistan: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Malaria"
+  ],
+  taiwan: [
+    "Routine",
+    "Hepatitis A",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies"
+  ],
+  "sao Tome and Principe": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  syria: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  switzerland: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  sweden: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  suriname: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  sudan: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "sri lanka": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  spain: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "south sudan": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Cholera",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  "south korea": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies"
+  ],
+  "south georgia south sandwich islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B"
+  ],
+  "south africa": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  somalia: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Poliomyelitis",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "solomon islands": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  slovenia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  slovakia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "sint maarten": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  singapore: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "sierra leone": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  seychelles: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  serbia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  senegal: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  "sint eustatius": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "saudi arabia": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Meningococcal disease",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "san marino": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  samoa: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Yellow Fever"],
+  "saint pierre and miquelon": [
+    "Routine",
+    "Rabies",
+    "Hepatitis A",
+    "Hepatitis B"
+  ],
+  "saint Martin": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "saint lucia": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "st kitts and nevis": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "saint helena": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  "usvirgin islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  saba: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  reunion: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  rwanda: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "russian federation": [
+    "Routine",
+    "Hepatitis A",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies"
+  ],
+  romania: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "puerto Rico": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  "saint barthelemy": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  paraguay: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever",
+    "Malaria"
+  ],
+  "papua new guinea": [
+    "Routine",
+    "Hepatitis A",
+    "Poliomyelitis",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies"
+  ],
+  portugal: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  poland: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "pitcairn islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  philippines: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  peru: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  qatar: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  panama: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever",
+    "Malaria"
+  ],
+  palau: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  pakistan: [
+    "Routine",
+    "Hepatitis A",
+    "Poliomyelitis",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  oman: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Malaria",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  norway: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "northern mariana islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B"
+  ],
+  "north korea": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "norfolk island": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  niue: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Yellow Fever"],
+  nigeria: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Poliomyelitis",
+    "Typhoid",
+    "Yellow Fever",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Meningococcal disease"
+  ],
+  niger: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Poliomyelitis",
+    "Rabies"
+  ],
+  nicaragua: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  "new zealand": ["Routine", "Hepatitis A", "Hepatitis B"],
+  "new caledonia": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  netherlands: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  nepal: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  nauru: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Yellow Fever"],
+  namibia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  mozambique: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  morocco: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  montserrat: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  montenegro: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  mongolia: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  moldova: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  micronesia: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  mexico: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  mayotte: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Malaria",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  mauritius: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  mauritania: [
+    "Routine",
+    "Malaria",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  martinique: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  monaco: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "marshall islands": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  malta: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies", "Yellow Fever"],
+  mali: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  malaysia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  malawi: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "maderia islands": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  madagascar: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Malaria",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  macedonia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  macau: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  luxembourg: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  lithuania: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  liechtenstein: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  libya: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  liberia: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  lesotho: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  lebanon: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  latvia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  lhaos: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  kyrgyzstan: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  kuwait: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  kosovo: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  kiribati: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  kenya: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Malaria",
+    "Meningococcal disease",
+    "Poliomyelitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  kazakhstan: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  jordan: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  japan: [
+    "Routine",
+    "Hepatitis A",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies"
+  ],
+  jamaica: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  israel: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies", "Typhoid"],
+  ireland: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  iraq: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  iran: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Poliomyelitis",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  indonesia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  india: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Malaria",
+    "Japanese encephalitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  iceland: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  hungary: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "hong kong": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  honduras: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  italy: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  haiti: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  guyana: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  "guinea bissau": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  guinea: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  guatemala: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  guam: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  guadeloupe: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "saint vincent and the grenadines": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  grenada: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  greenland: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  greece: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  gibraltar: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  ghana: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  germany: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  georgia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "the gambia": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  gabon: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  "french guiana": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  finland: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  fiji: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Yellow Fever"],
+  "faroe island": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "falkland islands": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  ethiopia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Malaria",
+    "Meningococcal disease",
+    "Poliomyelitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  eswatini: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  estonia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  france: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  eritrea: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Meningococcal disease",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "equatorial guinea": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  "united kingdom": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "el salvador": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  egypt: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  ecuador: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "easter island": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  "united arab emirates": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  "dominican republic": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies"
+  ],
+  dominica: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  djibouti: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  denmark: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "congo drc": [
+    "Routine",
+    "Yellow Fever",
+    "Poliomyelitis",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  cyprus: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  curacao: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "côte d'ivoire": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  cuba: ["Routine", "Typhoid", "Hepatitis A", "Rabies", "Hepatitis B"],
+  croatia: ["Routine", "Hepatitis A", "Rabies", "Hepatitis B"],
+  "costa rica": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Malaria",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "cook islands": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  congo: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  comoros: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  colombia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "christmas island": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  china: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Poliomyelitis",
+    "Rabies",
+    "Yellow Fever",
+    "Malaria"
+  ],
+  chile: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  chad: [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Poliomyelitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "central african republic": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  "cocos islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Yellow Fever"
+  ],
+  "cayman islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  "cape verde": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "canary islands": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  canada: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  cameroon: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Poliomyelitis",
+    "Rabies"
+  ],
+  cambodia: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "turks and caicos": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  burundi: [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  burma: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "burkina faso": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  bulgaria: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  brunei: [
+    "Routine",
+    "Typhoid",
+    "Hepatitis A",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "british indian ocean territory": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B"
+  ],
+  brazil: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  botswana: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "bosnia and herzegovina": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  australia: [
+    "Routine",
+    "Hepatitis A",
+    "Hepatitis B",
+    "Japanese encephalitis",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "french polynesia": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B"
+  ],
+  aruba: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  armenia: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  argentina: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "antigua and barbuda": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  antarctica: [],
+  anguilla: ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  angola: [
+    "Yellow Fever",
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Cholera",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  "british virgin islands": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies"
+  ],
+  andorra: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "american samoa": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  algeria: [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Cholera",
+    "Malaria",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  albania: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies", "Yellow Fever"]
+};
+
+
+if (vaccine[countryName.toLowerCase()] != undefined) {
+  var vaccines = vaccine[countryName.toLowerCase()]
+  console.log(vaccines);
 }
