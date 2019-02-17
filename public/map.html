@@ -67,9 +67,12 @@
     </script>
   </head>
   <body>
-    <form action="/search" class="search w-form"><input type="search" id="search" maxlength="256" name="query" placeholder="Where are you planning to travel?" required="" class="search-input w-input">
-       <div><img src="country-info/images/ic_search.png" width="30" alt="" class="image-3"><input type="submit" class="search-button w-button"></div>
-   </form>
+    <div>
+      <form action="/search" class="search w-form"><input type="search" id="search" maxlength="256" name="query" placeholder="Where are you planning to travel?" required="" class="search-input w-input">
+         <div><img src="country-info/images/ic_search.png" width="30" alt="" class="image-3"><input type="submit" class="search-button w-button"></div>
+     </form>
+    </div>
+    <div id="viewDiv" style="height:95%"></div>
   </body>
   <script>
     var healthData = {
