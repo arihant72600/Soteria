@@ -1139,6 +1139,11 @@ var travelRisk = [
     Country: "Antigua and Barbuda",
     "Risk Level": "Level 1: Exercise Normal Precautions",
     "Risk Level Description": "Exercise normal precautions"
+  },
+  {
+    Country: "United States",
+    "Risk Level": "Level 1: Exercise Normal Precautions",
+    "Risk Level Description": "Exercise normal precautions"
   }
 ];
 
@@ -2095,7 +2100,7 @@ var epiScores = [
     EPI2018Score: 79.89
   },
   {
-    Country: "United States of America",
+    Country: "United States",
     EPI2018Score: 71.19
   },
   {
@@ -3074,18 +3079,18 @@ for (var i = 0; i < arrayLength; i++) {
       waterScores[i]["Clean Water Score"];
     if (waterScores[i]["Clean Water Score"] >= 90) {
       document.getElementById("water-description").innerText =
-        "Clean – Safe water source is widely available. Most of the country’s water source is improved (piped household water connection located inside the user’s dwelling, plot or yard)";
+        "Clean – Safe water source is widely available. Most of the country’s water source is improved (piped household water connection located inside the user’s dwelling, plot or yard).";
     }
     if (waterScores[i]["Clean Water Score"] < 70) {
       document.getElementById("water-description").innerText =
-        "Dangerous -  Low access to safe water source, low proportion of water source is improved (piped household water connection located inside the user’s dwelling, plot or yard). Public water is not safe to consume";
+        "Dangerous -  Low access to safe water source, low proportion of water source is improved (piped household water connection located inside the user’s dwelling, plot or yard). Public water is not safe to consume.";
     }
     if (
       waterScores[i]["Clean Water Score"] >= 70 &&
       waterScores[i]["Clean Water Score"] < 90
     ) {
       document.getElementById("water-description").innerText =
-        "Moderate – Medium access to safe water source. Safe water source will typically be available in urban areas";
+        "Moderate – Medium access to safe water source. Safe water source will typically be available in urban areas.";
     }
   }
 }
@@ -3162,23 +3167,23 @@ fetch("https://api.openaq.org/v1/countries")
         var insertText =
           'Hazardous" AQI greater than 300. This would trigger a health warnings of emergency conditions. The entire population is more likely to be affected.';
       }
-      if (pm25Average > 200) {
+      if (pm25Average > 200 && pm25Average <= 250) {
         var insertText =
           '"Very Unhealthy" AQI is 201 to 300. This would trigger a health alert signifying that everyone may experience more serious health effects.';
       }
-      if (pm25Average > 150) {
+      if (pm25Average > 150 && pm25Average <= 200) {
         var insertText =
           '"Unhealthy" AQI is 151 to 200. Everyone may begin to experience some adverse health effects, and members of the sensitive groups may experience more serious effects.';
       }
-      if (pm25Average > 100) {
+      if (pm25Average > 100 && pm25Average <= 150) {
         var insertText =
           '"Unhealthy for Sensitive Groups" AQI is 101 to 150. Although general public is not likely to be affected at this AQI range, people with lung disease, older adults and children are at a greater risk from exposure to ozone, whereas persons with heart and lung disease, older adults and children are at greater risk from the presence of particles in the air.';
       }
-      if (pm25Average > 50) {
+      if (pm25Average > 50 && pm25Average <= 100) {
         var insertText =
           '"Moderate" AQI is 51 to 100. Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people. For example, people who are unusually sensitive to ozone may experience respiratory symptoms.';
       }
-      if (pm25Average > 0) {
+      if (pm25Average > 0 && pm25Average <= 50) {
         var insertText =
           '"Good" AQI is 0 to 50. Air quality is considered satisfactory, and air pollution poses little or no risk.';
       }
@@ -4629,8 +4634,43 @@ var vaccine = {
   albania: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies", "Yellow Fever"]
 };
 
+var vaccineDescriptions = {
+  Routine:
+    "Make sure you are up-to-date on routine vaccines before every trip. These vaccines include measles-mumps-rubella (MMR) vaccine, diphtheria-tetanus-pertussis vaccine, varicella (chickenpox) vaccine, polio vaccine, and your yearly flu shot.",
+  "Hepatitis A":
+    "CDC recommends this vaccine because you can get hepatitis A through contaminated food or water, regardless of where you are eating or staying.",
+  Typhoid:
+    "You can get typhoid through contaminated food or water. CDC recommends this vaccine for most travelers, especially if you are staying with friends or relatives, visiting smaller cities or rural areas, or if you are an adventurous eater.",
+  Poliomyelitis: "You may need a polio vaccine before your trip.",
+  "Hepatitis B":
+    "You can get hepatitis B through sexual contact, contaminated needles, and blood products, so CDC recommends this vaccine if you might have sex with a new partner, get a tattoo or piercing, or have any medical procedures.",
+  Malaria:
+    "You may need to take prescription medicine before, during, and after your trip to prevent malaria, especially if you are visiting low-altitude areas.",
+  Rabies:
+    "Although rabies can be found in dogs, bats, and other mammals, it is not a major risk to most travelers. A vaccine is recommended if travelers are involved in outdoor and other activities in remote areas that put them at risk for animal bites (such as adventure travel and caving).",
+  "Yellow Fever":
+    "If you are traveling from a country other than the US, check with a doctor or the CDC to see if you may be required to get the yellow fever vaccine.",
+  "Japanese encephalitis":
+    "You may need this vaccine if your trip will last more than a month, depending on where you are going.",
+  "Meningococcal disease":
+    "CDC recommends this vaccine if you plan to visit areas located in the meningitis belt during the dry season (December–June), when the disease is most common.",
+  Cholera:
+    "CDC recommends this vaccine for adults who are traveling to areas of active cholera transmission."
+};
 
 if (vaccine[countryName.toLowerCase()] != undefined) {
-  var vaccines = vaccine[countryName.toLowerCase()]
+  var vaccines = vaccine[countryName.toLowerCase()];
   console.log(vaccines);
+  var numVaccines = vaccines.length;
+  var innerTable = "";
+  for (var i = 0; i < numVaccines; i++) {
+    innerTable +=
+      "<tr><td style=\"padding:12px;text-align: left; color: #58585f;font-family: 'Lato', sans-serif;\" >";
+    innerTable += vaccines[i];
+    innerTable +=
+      "</td><td style=\"padding:12px;text-align: left; color: #58585f;font-family: 'Lato', sans-serif;\">";
+    innerTable += vaccineDescriptions[vaccines[i]];
+    innerTable += "</td></tr>";
+  }
+  document.getElementById("vaccine-table").innerHTML = innerTable;
 }
