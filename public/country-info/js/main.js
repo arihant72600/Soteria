@@ -2807,7 +2807,7 @@ var waterScores = [
     "Clean Water Score": 0
   },
   {
-    "Countries and Area": "Republic of Korea",
+    "Countries and Area": "South Korea",
     "Clean Water Score": 98
   },
   {
