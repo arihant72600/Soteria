@@ -47,7 +47,7 @@ var travelRisk = [
       "Do not travel to Somalia due to crime, terrorism, and piracy."
   },
   {
-    Country: "North Korea (Democratic People's Republic of Korea)",
+    Country: "North Korea",
     "Risk Level": "Level 4: Do Not Travel",
     "Risk Level Description":
       "Do not travel to North Korea due to the serious risk of arrest and long-term detention."
