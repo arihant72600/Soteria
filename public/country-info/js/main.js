@@ -3183,7 +3183,7 @@ fetch("https://api.openaq.org/v1/countries")
         var insertText =
           '"Moderate" AQI is 51 to 100. Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people. For example, people who are unusually sensitive to ozone may experience respiratory symptoms.';
       }
-      if (pm25Average > 0 && pm25Average <= 50) {
+      if (pm25Average <= 50) {
         var insertText =
           '"Good" AQI is 0 to 50. Air quality is considered satisfactory, and air pollution poses little or no risk.';
       }
@@ -4672,5 +4672,6 @@ if (vaccine[countryName.toLowerCase()] != undefined) {
     innerTable += vaccineDescriptions[vaccines[i]];
     innerTable += "</td></tr>";
   }
+  console.log(innerTable);
   document.getElementById("vaccine-table").innerHTML = innerTable;
 }
