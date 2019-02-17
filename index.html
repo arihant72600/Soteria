@@ -47,7 +47,7 @@
         var popupTrailheads = {
           title: "{NAME}",
           content:
-            "<b>Travel Advisory Level:</b> {LEVEL_} <br> <b>Air Quality Level: </b> {NAME:airQuality} <br> <b>Water Quality Level: </b> {NAME:waterQuality}"
+            "<b>Travel Advisory Level:</b> {LEVEL_} <br> {NAME:healthAdvisory}"
         };
 
         // Create the layer and set the popup
@@ -73,6 +73,9 @@
     };
     waterQuality = function(value, key, data) {
       return data.NAME + " water quality";
+    };
+    healthAdvisory = function(value, key, data) {
+      return "";
     };
   </script>
 </html>
