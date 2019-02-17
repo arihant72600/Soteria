@@ -813,7 +813,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Kyrgyzstan": [
+  "kyrgyzstan": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -821,16 +821,16 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Kuwait": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
-  "Kosovo": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Kiribati": [
+  "kuwait": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  "kosovo": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "kiribati": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
     "Hepatitis B",
     "Yellow Fever"
   ],
-  "Kenya": [
+  "kenya": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -842,7 +842,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Kazakhstan": [
+  "kazakhstan": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -850,7 +850,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Jordan": [
+  "jordan": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -858,14 +858,14 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Japan": [
+  "japan": [
     "Routine",
     "Hepatitis A",
     "Hepatitis B",
     "Japanese encephalitis",
     "Rabies"
   ],
-  "Jamaica": [
+  "jamaica": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -873,9 +873,9 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Israel": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies", "Typhoid"],
-  "Ireland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Iraq": [
+  "israel": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies", "Typhoid"],
+  "ireland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "iraq": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -883,7 +883,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Iran": [
+  "iran": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -893,7 +893,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Indonesia": [
+  "indonesia": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -903,7 +903,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "India": [
+  "india": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -914,16 +914,16 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Iceland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Hungary": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Hong kong sar": [
+  "iceland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "hungary": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "hong kong sar": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
     "Hepatitis B",
     "Rabies"
   ],
-  "Honduras": [
+  "honduras": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -932,8 +932,8 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Italy": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Haiti": [
+  "italy": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "haiti": [
     "Routine",
     "Hepatitis A",
     "Malaria",
@@ -943,7 +943,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Guyana": [
+  "guyana": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -952,64 +952,7 @@
     "Malaria",
     "Rabies"
   ],
-  "Guinea bissau": [
-    "Routine",
-    "Yellow Fever",
-    "Hepatitis A",
-    "Malaria",
-    "Typhoid",
-    "Hepatitis B",
-    "Meningococcal disease",
-    "Rabies"
-  ],
-  "Guinea": [
-    "Routine",
-    "Hepatitis A",
-    "Malaria",
-    "Typhoid",
-    "Yellow Fever",
-    "Hepatitis B",
-    "Meningococcal disease",
-    "Rabies"
-  ],
-  "Guatemala": [
-    "Routine",
-    "Hepatitis A",
-    "Typhoid",
-    "Hepatitis B",
-    "Malaria",
-    "Rabies",
-    "Yellow Fever"
-  ],
-  "Guam": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
-  "Guadeloupe": [
-    "Routine",
-    "Hepatitis A",
-    "Typhoid",
-    "Hepatitis B",
-    "Rabies",
-    "Yellow Fever"
-  ],
-  "Saint vincent and the grenadines": [
-    "Routine",
-    "Hepatitis A",
-    "Typhoid",
-    "Hepatitis B",
-    "Rabies",
-    "Yellow Fever"
-  ],
-  "Grenada": [
-    "Routine",
-    "Hepatitis A",
-    "Typhoid",
-    "Hepatitis B",
-    "Rabies",
-    "Yellow Fever"
-  ],
-  "Greenland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Greece": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Gibraltar": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Ghana": [
+  "guinea bissau": [
     "Routine",
     "Yellow Fever",
     "Hepatitis A",
@@ -1019,9 +962,7 @@
     "Meningococcal disease",
     "Rabies"
   ],
-  "Germany": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Georgia": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "The gambia": [
+  "guinea": [
     "Routine",
     "Hepatitis A",
     "Malaria",
@@ -1031,7 +972,66 @@
     "Meningococcal disease",
     "Rabies"
   ],
-  "Gabon": [
+  "guatemala": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Malaria",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "guam": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  "guadeloupe": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "saint vincent and the grenadines": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "grenada": [
+    "Routine",
+    "Hepatitis A",
+    "Typhoid",
+    "Hepatitis B",
+    "Rabies",
+    "Yellow Fever"
+  ],
+  "greenland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "greece": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "gibraltar": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "ghana": [
+    "Routine",
+    "Yellow Fever",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  "germany": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "georgia": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "the gambia": [
+    "Routine",
+    "Hepatitis A",
+    "Malaria",
+    "Typhoid",
+    "Yellow Fever",
+    "Hepatitis B",
+    "Meningococcal disease",
+    "Rabies"
+  ],
+  "gabon": [
     "Routine",
     "Yellow Fever",
     "Hepatitis A",
@@ -1040,7 +1040,7 @@
     "Hepatitis B",
     "Rabies"
   ],
-  "French guiana": [
+  "french guiana": [
     "Routine",
     "Yellow Fever",
     "Hepatitis A",
@@ -1049,11 +1049,11 @@
     "Malaria",
     "Rabies"
   ],
-  "Finland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Fiji": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Yellow Fever"],
-  "Faroe island": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Falkland islands": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
-  "Ethiopia": [
+  "finland": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "fiji": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Yellow Fever"],
+  "faroe island": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "falkland islands": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  "ethiopia": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1065,7 +1065,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Eswatini": [
+  "eswatini": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1074,9 +1074,9 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Estonia": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "France": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "Eritrea": [
+  "estonia": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "france": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "eritrea": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1086,7 +1086,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Equatorial guinea": [
+  "equatorial guinea": [
     "Routine",
     "Hepatitis A",
     "Malaria",
@@ -1095,8 +1095,8 @@
     "Hepatitis B",
     "Rabies"
   ],
-  "United kingdom": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "El salvador": [
+  "united kingdom": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "el salvador": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1105,7 +1105,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Egypt": [
+  "egypt": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1113,7 +1113,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Ecuador": [
+  "ecuador": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1122,15 +1122,15 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Easter island": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
-  "United arab emirates": [
+  "easter island": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B"],
+  "united arab emirates": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
     "Hepatitis B",
     "Rabies"
   ],
-  "Dominican republic": [
+  "dominican republic": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1139,7 +1139,7 @@
     "Malaria",
     "Rabies"
   ],
-  "Dominica": [
+  "dominica": [
     "Routine",
     "Hepatitis A",
     "Typhoid",
@@ -1147,7 +1147,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Djibouti": [
+  "djibouti": [
     "Routine",
     "Hepatitis A",
     "Malaria",
@@ -1156,7 +1156,7 @@
     "Rabies",
     "Yellow Fever"
   ],
-  "Denmark": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
+  "denmark": ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
   "congo drc": [
     "Routine",
     "Yellow Fever",
