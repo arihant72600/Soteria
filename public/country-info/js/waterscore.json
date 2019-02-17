@@ -1,0 +1,926 @@
+[
+  {
+    "Countries and Area": "Afghanistan",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Albania",
+    "Clean Water Score": 69
+  },
+  {
+    "Countries and Area": "Algeria",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "American Samoa",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Andorra",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Angola",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Anguilla",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Antigua and Barbuda",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Argentina",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Armenia",
+    "Clean Water Score": 61
+  },
+  {
+    "Countries and Area": "Aruba",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Australia",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Austria",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Azerbaijan",
+    "Clean Water Score": 72
+  },
+  {
+    "Countries and Area": "Bahamas",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Bahrain",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Bangladesh",
+    "Clean Water Score": 61
+  },
+  {
+    "Countries and Area": "Barbados",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Belarus",
+    "Clean Water Score": 94
+  },
+  {
+    "Countries and Area": "Belgium",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Belize",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Benin",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Bermuda",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Bhutan",
+    "Clean Water Score": 45
+  },
+  {
+    "Countries and Area": "Bolivia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Bosnia and Herzegovina",
+    "Clean Water Score": 89
+  },
+  {
+    "Countries and Area": "Botswana",
+    "Clean Water Score": 84
+  },
+  {
+    "Countries and Area": "Brazil",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "British Virgin Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Brunei Darussalam",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Bulgaria",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "Burkina Faso",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Burundi",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Cabo Verde",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Cambodia",
+    "Clean Water Score": 55
+  },
+  {
+    "Countries and Area": "Cameroon",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Canada",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Caribbean Netherlands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Cayman Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Central African Republic",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Chad",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Channel Islands",
+    "Clean Water Score": 92
+  },
+  {
+    "Countries and Area": "Chile",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "China",
+    "Clean Water Score": 91
+  },
+  {
+    "Countries and Area": "Hong Kong",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Macau",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Colombia",
+    "Clean Water Score": 81
+  },
+  {
+    "Countries and Area": "Comoros",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Congo",
+    "Clean Water Score": 37
+  },
+  {
+    "Countries and Area": "Cook Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Costa Rica",
+    "Clean Water Score": 90
+  },
+  {
+    "Countries and Area": "Côte d'Ivoire",
+    "Clean Water Score": 65
+  },
+  {
+    "Countries and Area": "Croatia",
+    "Clean Water Score": 90
+  },
+  {
+    "Countries and Area": "Cuba",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Curacao",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Cyprus",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Czech Republic",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Democratic People's Republic of Korea",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Democratic Republic of the Congo",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Denmark",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "Djibouti",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Dominica",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Dominican Republic",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Ecuador",
+    "Clean Water Score": 85
+  },
+  {
+    "Countries and Area": "Egypt",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "El Salvador",
+    "Clean Water Score": 77
+  },
+  {
+    "Countries and Area": "Equatorial Guinea",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Eritrea",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Estonia",
+    "Clean Water Score": 82
+  },
+  {
+    "Countries and Area": "Ethiopia",
+    "Clean Water Score": 38
+  },
+  {
+    "Countries and Area": "Falkland Islands (Malvinas)",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Faroe Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Fiji",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Finland",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "France",
+    "Clean Water Score": 93
+  },
+  {
+    "Countries and Area": "French Guiana",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "French Polynesia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Gabon",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Gambia",
+    "Clean Water Score": 70
+  },
+  {
+    "Countries and Area": "Georgia",
+    "Clean Water Score": 73
+  },
+  {
+    "Countries and Area": "Germany",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Ghana",
+    "Clean Water Score": 44
+  },
+  {
+    "Countries and Area": "Gibraltar",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Greece",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Greenland",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "Grenada",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Guadeloupe",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Guam",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Guatemala",
+    "Clean Water Score": 61
+  },
+  {
+    "Countries and Area": "Guinea",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Guinea-Bissau",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Guyana",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Haiti",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Holy See",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Honduras",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Hungary",
+    "Clean Water Score": 82
+  },
+  {
+    "Countries and Area": "Iceland",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "India",
+    "Clean Water Score": 49
+  },
+  {
+    "Countries and Area": "Indonesia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Iran (Islamic Republic of)",
+    "Clean Water Score": 94
+  },
+  {
+    "Countries and Area": "Iraq",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Ireland",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Isle of Man",
+    "Clean Water Score": 96
+  },
+  {
+    "Countries and Area": "Israel",
+    "Clean Water Score": 99
+  },
+  {
+    "Countries and Area": "Italy",
+    "Clean Water Score": 94
+  },
+  {
+    "Countries and Area": "Jamaica",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Japan",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "Jordan",
+    "Clean Water Score": 93
+  },
+  {
+    "Countries and Area": "Kazakhstan",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Kenya",
+    "Clean Water Score": 54
+  },
+  {
+    "Countries and Area": "Kiribati",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Kuwait",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Kyrgyzstan",
+    "Clean Water Score": 93
+  },
+  {
+    "Countries and Area": "Lao People's Democratic Republic",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Latvia",
+    "Clean Water Score": 82
+  },
+  {
+    "Countries and Area": "Lebanon",
+    "Clean Water Score": 48
+  },
+  {
+    "Countries and Area": "Lesotho",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Liberia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Libya",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Liechtenstein",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Lithuania",
+    "Clean Water Score": 92
+  },
+  {
+    "Countries and Area": "Luxembourg",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Madagascar",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Malawi",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Malaysia",
+    "Clean Water Score": 92
+  },
+  {
+    "Countries and Area": "Maldives",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Mali",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Malta",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Marshall Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Martinique",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Mauritania",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Mauritius",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Mayotte",
+    "Clean Water Score": 85
+  },
+  {
+    "Countries and Area": "Mexico",
+    "Clean Water Score": 43
+  },
+  {
+    "Countries and Area": "Micronesia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Monaco",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Mongolia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Montenegro",
+    "Clean Water Score": 94
+  },
+  {
+    "Countries and Area": "Montserrat",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Morocco",
+    "Clean Water Score": 89
+  },
+  {
+    "Countries and Area": "Mozambique",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Myanmar",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Namibia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Nauru",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Nepal",
+    "Clean Water Score": 34
+  },
+  {
+    "Countries and Area": "Netherlands",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "New Caledonia",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "New Zealand",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Nicaragua",
+    "Clean Water Score": 79
+  },
+  {
+    "Countries and Area": "Niger",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Nigeria",
+    "Clean Water Score": 19
+  },
+  {
+    "Countries and Area": "Niue",
+    "Clean Water Score": 97
+  },
+  {
+    "Countries and Area": "Northern Mariana Islands",
+    "Clean Water Score": 82
+  },
+  {
+    "Countries and Area": "Norway",
+    "Clean Water Score": 95
+  },
+  {
+    "Countries and Area": "Oman",
+    "Clean Water Score": 89
+  },
+  {
+    "Countries and Area": "Pakistan",
+    "Clean Water Score": 41
+  },
+  {
+    "Countries and Area": "Palau",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Panama",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Papua New Guinea",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Paraguay",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Peru",
+    "Clean Water Score": 58
+  },
+  {
+    "Countries and Area": "Philippines",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Poland",
+    "Clean Water Score": 94
+  },
+  {
+    "Countries and Area": "Portugal",
+    "Clean Water Score": 95
+  },
+  {
+    "Countries and Area": "Puerto Rico",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Qatar",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Republic of Korea",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Republic of Moldova",
+    "Clean Water Score": 70
+  },
+  {
+    "Countries and Area": "Romania",
+    "Clean Water Score": 88
+  },
+  {
+    "Countries and Area": "Russian Federation",
+    "Clean Water Score": 76
+  },
+  {
+    "Countries and Area": "Rwanda",
+    "Clean Water Score": 36
+  },
+  {
+    "Countries and Area": "Saint Helena",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Saint Kitts and Nevis",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Saint Lucia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Saint Pierre and Miquelon",
+    "Clean Water Score": 83
+  },
+  {
+    "Countries and Area": "Saint Vincent and the Grenadines",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Samoa",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "San Marino",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Sao Tome and Principe",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Saudi Arabia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Senegal",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Serbia",
+    "Clean Water Score": 88
+  },
+  {
+    "Countries and Area": "Seychelles",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Sierra Leone",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Singapore",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Sint Maarten",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Slovakia",
+    "Clean Water Score": 93
+  },
+  {
+    "Countries and Area": "Slovenia",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Solomon Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Somalia",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "South Africa",
+    "Clean Water Score": 85
+  },
+  {
+    "Countries and Area": "South Sudan",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Spain",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Sri Lanka",
+    "Clean Water Score": 93
+  },
+  {
+    "Countries and Area": "Sudan",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Suriname",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Swaziland",
+    "Clean Water Score": 88
+  },
+  {
+    "Countries and Area": "Sweden",
+    "Clean Water Score": 98
+  },
+  {
+    "Countries and Area": "Switzerland",
+    "Clean Water Score": 95
+  },
+  {
+    "Countries and Area": "Syrian Arab Republic",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Tajikistan",
+    "Clean Water Score": 47
+  },
+  {
+    "Countries and Area": "Thailand",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "The former Yugoslav Republic of Macedonia",
+    "Clean Water Score": 90
+  },
+  {
+    "Countries and Area": "Timor-Leste",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Togo",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Tokelau",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Tonga",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Trinidad and Tobago",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Tunisia",
+    "Clean Water Score": 93
+  },
+  {
+    "Countries and Area": "Turkey",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Turkmenistan",
+    "Clean Water Score": 87
+  },
+  {
+    "Countries and Area": "Turks and Caicos",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Tuvalu",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Uganda",
+    "Clean Water Score": 18
+  },
+  {
+    "Countries and Area": "Ukraine",
+    "Clean Water Score": 92
+  },
+  {
+    "Countries and Area": "United Arab Emirates",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "United Kingdom",
+    "Clean Water Score": 96
+  },
+  {
+    "Countries and Area": "United Republic of Tanzania",
+    "Clean Water Score": 34
+  },
+  {
+    "Countries and Area": "United States Virgin Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "United States",
+    "Clean Water Score": 100
+  },
+  {
+    "Countries and Area": "Uruguay",
+    "Clean Water Score": 94
+  },
+  {
+    "Countries and Area": "Uzbekistan",
+    "Clean Water Score": 87
+  },
+  {
+    "Countries and Area": "Vanuatu",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Venezuela",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Vietnam",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Wallis and Futuna Islands",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "West Bank and Gaza Strip",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Western Sahara",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Yemen",
+    "Clean Water Score": 0
+  },
+  {
+    "Countries and Area": "Zambia",
+    "Clean Water Score": 47
+  },
+  {
+    "Countries and Area": "Zimbabwe",
+    "Clean Water Score": 0
+  }
+]

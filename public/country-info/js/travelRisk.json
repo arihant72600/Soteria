@@ -67,7 +67,7 @@
   {
     "Country": "Turkey",
     "Risk Level": "Level 3: Reconsider Travel",
-    "Risk Level Description": "Reconsider travel to Turkey due to terrorism and arbitrary detentions. Some areas have increased risk. Read the entire Travel Advisory.Do not travel to areas near the Syria and Iraq borders due to terrorism."
+    "Risk Level Description": "Reconsider travel to Turkey due to terrorism and arbitrary detentions. Some areas have increased risk. Read the entire Travel Advisory. Do not travel to areas near the Syria and Iraq borders due to terrorism."
   },
   {
     "Country": "Burkina Faso",
@@ -122,7 +122,7 @@
   {
     "Country": "Nicaragua",
     "Risk Level": "Level 3: Reconsider Travel",
-    "Risk Level Description": "Reconsider travel to Nicaragua due to�crime,�civil unrest,�limited healthcare availability, and arbitrary enforcement of laws."
+    "Risk Level Description": "Reconsider travel to Nicaragua due to crime, civil unrest, limited healthcare availability, and arbitrary enforcement of laws."
   },
   {
     "Country": "Lebanon",
@@ -167,7 +167,7 @@
   {
     "Country": "Antarctica",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Antarctica due to�environmental hazards posed by extreme and unpredictable weather.�"
+    "Risk Level Description": "Exercise increased caution in Antarctica due to environmental hazards posed by extreme and unpredictable weather."
   },
   {
     "Country": "Nepal",
@@ -227,7 +227,7 @@
   {
     "Country": "Burma (Myanmar)",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Burma due to areas of civil unrest and armed conflict.�"
+    "Risk Level Description": "Exercise increased caution in Burma due to areas of civil unrest and armed conflict. "
   },
   {
     "Country": "Belgium",
@@ -302,7 +302,7 @@
   {
     "Country": "Cuba",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Cuba�due to attacks targeting U.S. Embassy Havana employees resulting in the drawdown of embassy staff."
+    "Risk Level Description": "Exercise increased caution in Cuba due to attacks targeting U.S. Embassy Havana employees resulting in the drawdown of embassy staff."
   },
   {
     "Country": "Tajikistan",
@@ -337,7 +337,7 @@
   {
     "Country": "Colombia",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Colombia due to�crime and terrorism.�"
+    "Risk Level Description": "Exercise increased caution in Colombia due to crime and terrorism. "
   },
   {
     "Country": "Denmark",

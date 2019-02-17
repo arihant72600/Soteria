@@ -11,11 +11,11 @@ function findGetParameter(parameterName) {
   return result;
 }
 
-name = findGetParameter("name");
+countryName = findGetParameter("name");
 
-document.getElementById("Country").innerText = name;
+document.getElementById("Country").innerText = countryName;
 
-travelRisk = [
+var travelRisk = [
   {
     Country: "Yemen",
     "Risk Level": "Level 4: Do Not Travel",
@@ -1141,3 +1141,15 @@ travelRisk = [
     "Risk Level Description": "Exercise normal precautions"
   }
 ];
+
+var arrayLength = travelRisk.length;
+
+for (var i = 0; i < arrayLength; i++) {
+  if (travelRisk[i].Country.toLowerCase() == countryName.toLowerCase()) {
+    document.getElementById("saftey-level").innerText = travelRisk[i][
+      "Risk Level"
+    ].slice(0, 7);
+    document.getElementById("saftey-level-description").innerText =
+      travelRisk[i]["Risk Level Description"];
+  }
+}
