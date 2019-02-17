@@ -1,2 +1,2 @@
 # Soteria
-A responsive web app that provides travelers with relevant health and safety all in one convenient location.
+Soteria presents critical health and vaccination information from the Center for Disease Control, travel advisory data from the U.S Department of the State, and water and real time air quality data from UNICEF and openaq.org. Novel key risks are highlighted for each country and required vaccinations are listed for the travelers. Travelers can also use the interactive map on the landing page to get a quick high-level view of the travel and health advisories. Additionally, a feature will be added to allow travelers to make appointment to obtain the vaccines they are missing for traveling to the selected country.
