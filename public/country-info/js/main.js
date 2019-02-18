@@ -3080,12 +3080,16 @@ for (var i = 0; i < arrayLength; i++) {
     if (waterScores[i]["Clean Water Score"] >= 90) {
       document.getElementById("water-description").innerText =
         "Clean – Safe water source is widely available. Most of the country’s water source is improved (piped household water connection located inside the user’s dwelling, plot or yard).";
-      document.getElementById("w-node-6668900cac6c-cd3c3950").style.backgroundColor = "#d0e6a5";
+      document.getElementById(
+        "w-node-6668900cac6c-cd3c3950"
+      ).style.backgroundColor = "#d0e6a5";
     }
     if (waterScores[i]["Clean Water Score"] < 70) {
       document.getElementById("water-description").innerText =
         "Dangerous -  Low access to safe water source, low proportion of water source is improved (piped household water connection located inside the user’s dwelling, plot or yard). Public water is not safe to consume.";
-      document.getElementById("w-node-6668900cac6c-cd3c3950").style.backgroundColor = "red";
+      document.getElementById(
+        "w-node-6668900cac6c-cd3c3950"
+      ).style.backgroundColor = "red";
     }
     if (
       waterScores[i]["Clean Water Score"] >= 70 &&
@@ -3093,7 +3097,9 @@ for (var i = 0; i < arrayLength; i++) {
     ) {
       document.getElementById("water-description").innerText =
         "Moderate – Medium access to safe water source. Safe water source will typically be available in urban areas.";
-      document.getElementById("w-node-6668900cac6c-cd3c3950").style.backgroundColor = "#f2db6a";
+      document.getElementById(
+        "w-node-6668900cac6c-cd3c3950"
+      ).style.backgroundColor = "#f2db6a";
     }
   }
 }
@@ -3169,35 +3175,48 @@ fetch("https://api.openaq.org/v1/countries")
       if (pm25Average > 300) {
         var insertText =
           'Hazardous" AQI greater than 300. This would trigger a health warnings of emergency conditions. The entire population is more likely to be affected.';
-        document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "red";
+        document.getElementById(
+          "w-node-9edf023f5dd8-cd3c3950"
+        ).style.backgroundColor = "red";
       }
-      if (pm25Average > 200 && pm25Average <= 250) {
+      if (pm25Average > 200 && pm25Average <= 300) {
         var insertText =
           '"Very Unhealthy" AQI is 201 to 300. This would trigger a health alert signifying that everyone may experience more serious health effects.';
-        document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "#f36f5c";
+        document.getElementById(
+          "w-node-9edf023f5dd8-cd3c3950"
+        ).style.backgroundColor = "#f36f5c";
       }
       if (pm25Average > 150 && pm25Average <= 200) {
         var insertText =
           '"Unhealthy" AQI is 151 to 200. Everyone may begin to experience some adverse health effects, and members of the sensitive groups may experience more serious effects.';
-        document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "#f8a168";
+        document.getElementById(
+          "w-node-9edf023f5dd8-cd3c3950"
+        ).style.backgroundColor = "#f8a168";
       }
       if (pm25Average > 100 && pm25Average <= 150) {
         var insertText =
           '"Unhealthy for Sensitive Groups" AQI is 101 to 150. Although general public is not likely to be affected at this AQI range, people with lung disease, older adults and children are at a greater risk from exposure to ozone, whereas persons with heart and lung disease, older adults and children are at greater risk from the presence of particles in the air.';
-        document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "#f8ca68";
+        document.getElementById(
+          "w-node-9edf023f5dd8-cd3c3950"
+        ).style.backgroundColor = "#f8ca68";
       }
       if (pm25Average > 50 && pm25Average <= 100) {
         var insertText =
           '"Moderate" AQI is 51 to 100. Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people. For example, people who are unusually sensitive to ozone may experience respiratory symptoms.';
-        document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "#f5f58f";
+        document.getElementById(
+          "w-node-9edf023f5dd8-cd3c3950"
+        ).style.backgroundColor = "#f5f58f";
       }
       if (pm25Average <= 50) {
         var insertText =
           '"Good" AQI is 0 to 50. Air quality is considered satisfactory, and air pollution poses little or no risk.';
-        document.getElementById("w-node-9edf023f5dd8-cd3c3950").style.backgroundColor = "#d0e6a5";
+        document.getElementById(
+          "w-node-9edf023f5dd8-cd3c3950"
+        ).style.backgroundColor = "#d0e6a5";
       }
+      console.group(insertText);
       if (!isNaN(lowerBound) && !isNaN(upperBound))
-       document.getElementById("air-description").innerText = insertText;
+        document.getElementById("air-description").innerText = insertText;
     },
     function(error) {}
   );
@@ -3688,7 +3707,7 @@ var vaccine = {
     "Rabies"
   ],
   romania: ["Routine", "Hepatitis A", "Hepatitis B", "Rabies"],
-  "puerto Rico": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
+  "puerto rico": ["Routine", "Hepatitis A", "Typhoid", "Hepatitis B", "Rabies"],
   "saint barthelemy": [
     "Routine",
     "Hepatitis A",
