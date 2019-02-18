@@ -14,6 +14,7 @@ function findGetParameter(parameterName) {
 countryName = findGetParameter("name").replace("+", " ");
 
 document.getElementById("Country").innerText = countryName;
+document.title = countryName + " Travel Information";
 
 var travelRisk = [
   {
