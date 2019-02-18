@@ -3149,7 +3149,6 @@ fetch("https://api.openaq.org/v1/countries")
   .then(
     function(myJson) {
       var airResults = myJson.results;
-      console.log(airResults);
       var pm25Values = [];
       for (var i = 0; i < airResults.length; i++) {
         var measurements = airResults[i].measurements;
@@ -3166,9 +3165,6 @@ fetch("https://api.openaq.org/v1/countries")
       if (lowerBound < 0) lowerBound = 0;
       lowerBound = Math.round(lowerBound * 10) / 10;
       upperBound = Math.round(upperBound * 10) / 10;
-      console.log(pm25Values);
-      console.log(lowerBound);
-      console.log(upperBound);
       if (!isNaN(lowerBound) && !isNaN(upperBound))
         document.getElementById("air-quality").innerText =
           lowerBound + " - " + upperBound;
@@ -3214,7 +3210,6 @@ fetch("https://api.openaq.org/v1/countries")
           "w-node-9edf023f5dd8-cd3c3950"
         ).style.backgroundColor = "#d0e6a5";
       }
-      console.group(insertText);
       if (!isNaN(lowerBound) && !isNaN(upperBound))
         document.getElementById("air-description").innerText = insertText;
     },
@@ -4689,7 +4684,6 @@ var vaccineDescriptions = {
 
 if (vaccine[countryName.toLowerCase()] != undefined) {
   var vaccines = vaccine[countryName.toLowerCase()];
-  console.log(vaccines);
   var numVaccines = vaccines.length;
   var innerTable = "";
   for (var i = 0; i < numVaccines; i++) {
@@ -4701,6 +4695,5 @@ if (vaccine[countryName.toLowerCase()] != undefined) {
     innerTable += vaccineDescriptions[vaccines[i]];
     innerTable += "</td></tr>";
   }
-  console.log(innerTable);
   document.getElementById("vaccine-table").innerHTML = innerTable;
 }

@@ -5,14 +5,13 @@
       name="viewport"
       content="initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>ArcGIS DevLabs: JavaScript Starter App</title>
+    <title>Travel Map</title>
     <style>
       html,
       body,
       #viewDiv {
         padding: 0;
         margin: 0;
-        height: 100%;
         width: 100%;
       }
     </style>
@@ -237,13 +236,6 @@
       "Yucatán",
       "Zacatecas"
     ];
-    console.log(healthData);
-    airQuality = function(value, key, data) {
-      return data.NAME + " air quality";
-    };
-    waterQuality = function(value, key, data) {
-      return data.NAME + " water quality";
-    };
     healthAdvisory = function(value, key, data) {
       country = value.toLowerCase();
       if (mexicoStates.includes(data.NAME)) {
