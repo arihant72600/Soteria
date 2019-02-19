@@ -25,7 +25,7 @@
     "Risk Level Description": "Do not travel to Somalia due to crime, terrorism, and piracy."
   },
   {
-    "Country": "North Korea (Democratic People's Republic of Korea)",
+    "Country": "North Korea",
     "Risk Level": "Level 4: Do Not Travel",
     "Risk Level Description": "Do not travel to North Korea due to the serious risk of arrest and long-term detention."
   },
@@ -85,7 +85,7 @@
     "Risk Level Description": "Reconsider travel to Nigeria due to elections, crime, terrorism, civil unrest, and piracy. Do not travel to Borno and Yobe States and northern Adamawa State due to terrorism"
   },
   {
-    "Country": "Democratic Republic of the Congo",
+    "Country": "Congo DRC",
     "Risk Level": "Level 3: Reconsider Travel",
     "Risk Level Description": "Reconsider travel to the Democratic Republic of the Congo (DRC) due to crime and civil unrest. Do not travel to Eastern DRC and the three Kasai provinces due to armed conflict."
   },
@@ -225,9 +225,9 @@
     "Risk Level Description": "Exercise increased caution in France due to terrorism."
   },
   {
-    "Country": "Burma (Myanmar)",
+    "Country": "Burma",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Burma due to areas of civil unrest and armed conflict. "
+    "Risk Level Description": "Exercise increased caution in Burma due to areas of civil unrest and armed conflict.�"
   },
   {
     "Country": "Belgium",
@@ -257,7 +257,7 @@
   {
     "Country": "Côte d'Ivoire",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Cote d?Ivoire due to crime and terrorism."
+    "Risk Level Description": "Exercise increased caution in Côte d'Ivoire due to crime and terrorism."
   },
   {
     "Country": "Russian Federation",
@@ -337,7 +337,7 @@
   {
     "Country": "Colombia",
     "Risk Level": "Level 2: Exercise Increased Caution",
-    "Risk Level Description": "Exercise increased caution in Colombia due to crime and terrorism. "
+    "Risk Level Description": "Exercise increased caution in Colombia due to crime and terrorism."
   },
   {
     "Country": "Denmark",
@@ -380,7 +380,7 @@
     "Risk Level Description": "Exercise increased caution in Cameroon due to crime."
   },
   {
-    "Country": "Congo DRC",
+    "Country": "Republic of the Congo",
     "Risk Level": "Level 2: Exercise Increased Caution",
     "Risk Level Description": "Exercise increased caution in the Republic of the Congo due to crime and civil unrest."
   },
@@ -501,7 +501,7 @@
   },
   {
     "Country": "Sint Maarten",
-    "Risk Level": "8-Jan-19",
+    "Risk Level": "Level 1: Exercise Normal Precautions",
     "Risk Level Description": "Exercise normal precautions"
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "Country": "Turkmenistan",
-    "Risk Level": "13-Dec-18",
+    "Risk Level": "Level 1: Exercise Normal Precautions",
     "Risk Level Description": "Exercise normal precautions"
   },
   {
@@ -1036,6 +1036,11 @@
   },
   {
     "Country": "Antigua and Barbuda",
+    "Risk Level": "Level 1: Exercise Normal Precautions",
+    "Risk Level Description": "Exercise normal precautions"
+  },
+  {
+    "Country": "United States",
     "Risk Level": "Level 1: Exercise Normal Precautions",
     "Risk Level Description": "Exercise normal precautions"
   }
